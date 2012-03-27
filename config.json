@@ -1,0 +1,24 @@
+{
+	"name": "Browser content script",
+	"author": "Trigger",
+	"url" : "http://trigger.io",
+	"version": "1.0",
+	"platform_version": "v1.2",
+	"description": "A template Forge app which shows how the platform can be used to make a browser extension; in this case, an extension which lets you change the background colour of web pages.",
+	"permissions": [ "tabs" ],
+	"background_files": [  ],
+	"activations": [
+		{
+            "patterns": ["<all_urls>"],
+            "scripts": ["content.js"],
+            "styles": [],
+            "run_at": "ready"
+        }
+	],
+	"logging": {
+		"level": "DEBUG"
+	},
+	"browser_action": {
+        "default_popup": "popup.html"
+    }
+}
